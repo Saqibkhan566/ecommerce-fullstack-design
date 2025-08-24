@@ -1,0 +1,42 @@
+.card{
+    border: 1px solid #eee;
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 1rem;
+    transition: box-shadow 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card:hover{
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.card img{
+    max-width: 10rem;
+    height: 10rem;
+}
+
+.card-body{
+    padding: 16px;
+}
+
+.card-title{
+    font-size: 1.25rem;
+    margin: 0 0 8px;
+}
+
+.card-price{
+    font-size: 1.125rem;
+    color: #333;
+}
+
+.card-rating{
+    margin: 8px 0;
+}
+
+.card-reviews{
+    font-size: 0.875rem;
+    color: #666;
+}
