@@ -3,6 +3,8 @@ import Navbar from './Navbar/Navbar';
 import './Home.css';
 import { Link } from 'react-router-dom';
 import ProductCard from './ProductCard';
+import Appstore from '../assets/appstore.png';
+import Playstore from '../assets/playstore.png';
 
 const Home = () => {
 
@@ -328,16 +330,20 @@ const Home = () => {
                             </div>
                             <div className="deals-timer">
                                 <div>
-                                    <span>{String(timeLeft.days).padStart(2, '0')}</span>Days
+                                    <span>{String(timeLeft.days).padStart(2, '0')}</span>
+                                    <span>Days</span>
                                 </div>
                                 <div>
-                                    <span>{String(timeLeft.hours).padStart(2, '0')}</span>Hour
+                                    <span>{String(timeLeft.hours).padStart(2, '0')}</span>
+                                    <span>Hours</span>
                                 </div>
                                 <div>
-                                    <span>{String(timeLeft.minutes).padStart(2, '0')}</span>Min
+                                    <span>{String(timeLeft.minutes).padStart(2, '0')}</span>
+                                    <span>Min</span>
                                 </div>
                                 <div>
-                                    <span>{String(timeLeft.seconds).padStart(2, '0')}</span>Sec
+                                    <span>{String(timeLeft.seconds).padStart(2, '0')}</span>
+                                    <span>Sec</span>
                                 </div>
                             </div>
                         </div>
@@ -369,7 +375,7 @@ const Home = () => {
                     <div className="category-card left-card" style={{ background: '#f8e7c9' }}>
                         <div className="category-info">
                             <h2>Home and outdoor</h2>
-                            <button className="source-btn">Source now</button>
+                            <button className="btn btn-primary">Source now</button>
                         </div>
                         {/* <img
                             src="https://cdn.pixabay.com/photo/2016/04/18/08/50/kitchen-1336160_1280.jpg"
@@ -398,7 +404,7 @@ const Home = () => {
                     <div className="category-card left-card" style={{ background: '#e6f3fa' }}>
                         <div className='category-info'>
                             <h2>Consumer electronics and gadgets</h2>
-                            <button className="source-btn">Source now</button>
+                            <button className="btn btn-primary">Source now</button>
                         </div>
                         {/* <img
                             src="https://cdn.pixabay.com/photo/2016/01/13/12/17/tablet-1137688_1280.jpg"
@@ -587,12 +593,12 @@ const Home = () => {
                         <div className="footer-col">
                             <div className="footer-col-title">Get app</div>
                             <img
-                                src="https://cdn.pixabay.com/photo/2015/09/02/12/45/apple-918492_1280.png"
+                                src={Appstore}
                                 alt="App Store"
                                 className="footer-app"
                             />
                             <img
-                                src="https://cdn.pixabay.com/photo/2015/09/02/12/45/google-play-918493_1280.png"
+                                src={Playstore}
                                 alt="Google Play"
                                 className="footer-app"
                             />
@@ -601,7 +607,7 @@ const Home = () => {
                 </div>
                 <div className="footer-bottom">
                     <span>&copy; {new Date().getFullYear()} Ecommerce.</span>
-                    <span className="footer-lang">English ⬇️</span>
+                    <span className="footer-lang">English ^</span>
                 </div>
             </footer>
         </div>

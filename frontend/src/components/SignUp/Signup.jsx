@@ -109,7 +109,7 @@ const SignUp = () => {
                             <input
                                 id="phone" type="tel" className="form-control"
                                 value={phone} onChange={e => setPhone(e.target.value)}
-                                pattern="\d{10}" title="10 digits"
+                                pattern="\d{11}" title="11 digits"
                                 disabled={loading}
                             />
                         </div>
